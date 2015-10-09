@@ -43,7 +43,7 @@ else
   # leave this on by default
   firewall_rule 'ssh' do
     port 22
-    action :allow
+    command :allow
   end
 
   node['firewall']['rules'].each do |rule_mash|
