@@ -37,7 +37,7 @@ else
   execute 'ufw --force reset'
 
   firewall 'ufw' do
-    action :enable
+    action :install
   end
 
   # leave this on by default
